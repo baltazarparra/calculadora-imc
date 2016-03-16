@@ -4,8 +4,10 @@
 
 var peso = prompt('Quanto está pesando?.');
 var estatura = prompt('Quanto você mede?.');
-var stat = estatura.toString();
-var altura = stat.charAt(0) + '.' + stat.charAt(1) + stat.charAt(2);
+var virgula = estatura.replace(',','.');
+var stat = virgula.toString();
+var rem = stat.replace('.','');
+var altura = rem.charAt(0) + '.' + rem.charAt(1) + rem.charAt(2);
 
 var imc = peso / (altura * altura);
 
