@@ -15,7 +15,7 @@ var altura = validaPonto.charAt(0) + '.' + validaPonto.charAt(1) + validaPonto.c
 
 var imc = peso / (altura * altura);
 
-	var para = document.createElement("p");
+	var para = document.createElement("h1");
 	var node = document.createTextNode(imc);
 	para.appendChild(node);
 	var element = document.getElementById("div1");
