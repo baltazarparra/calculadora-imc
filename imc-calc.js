@@ -16,7 +16,7 @@ var altura = validaPonto.charAt(0) + '.' + validaPonto.charAt(1) + validaPonto.c
 var imc = peso / (altura * altura);
 
 	var para = document.createElement("h1");
-	var node = document.createTextNode(imc);
+	var node = document.createTextNode('Seu indice de massa corporal é de: ' + imc);
 	para.appendChild(node);
 	var element = document.getElementById("div1");
 	element.appendChild(para);
