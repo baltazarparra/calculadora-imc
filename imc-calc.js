@@ -2,17 +2,24 @@
  * Created by baltazar on 16/03/16.
  */
 
-var peso = prompt('Quanto está pesando?.');
-var estatura = prompt('Quanto você mede?.');
-var virgula = estatura.replace(',','.');
-var stat = virgula.toString();
-var rem = stat.replace('.','');
-var altura = rem.charAt(0) + '.' + rem.charAt(1) + rem.charAt(2);
+function imcCalc(){
+
+
+var peso = document.getElementById("peso").value;
+var estatura = document.getElementById("estatura").value;
+
+var replaceVirgula = estatura.replace(',','.');
+var alturaString = replaceVirgula.toString();
+var validaPonto = alturaString.replace('.','');
+var altura = validaPonto.charAt(0) + '.' + validaPonto.charAt(1) + validaPonto.charAt(2);
 
 var imc = peso / (altura * altura);
 
-var mostra = function(frase) {
-	document.write(frase);
-};
+	var para = document.createElement("p");
+	var node = document.createTextNode(imc);
+	para.appendChild(node);
+	var element = document.getElementById("div1");
+	element.appendChild(para);
+	return false;
+}
 
-mostra('Seu indice de massa corporal é de ' + imc);
