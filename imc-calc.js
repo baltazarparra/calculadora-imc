@@ -13,7 +13,15 @@ var alturaString = replaceVirgula.toString();
 var validaPonto = alturaString.replace('.','');
 var altura = validaPonto.charAt(0) + '.' + validaPonto.charAt(1) + validaPonto.charAt(2);
 
-var imc = peso / (altura * altura);
+var indice = peso / (altura * altura);
+var imc = indice.toFixed(2);
+
+	//if (document.getElementById('homem').checked) {
+	//	rate_value = document.getElementById('homem').value;
+	//	var sexo = document.createTextNode('HOMEM');
+	//} else {
+	//	var sexo = document.createTextNode('MULHER');
+	//}
 
 	var para = document.createElement("h1");
 	var node = document.createTextNode('Seu indice de massa corporal é de: ' + imc);
