@@ -21,21 +21,28 @@ var imc = indice.toFixed(2);
 
 	if (document.getElementById('homem').checked) {
 		rate_value = document.getElementById('homem').value;
-		var sexo = 'E ai mano, ';
+		if (imc < 20) {
+			var node = document.createTextNode('Seu imc é de ' + imc + ' ' + 'Está abaixo do normal, você precisa começar a comer direito.');
+		} else if (imc > 28) {
+			var node = document.createTextNode('Seu imc é de ' + imc + ' ' + 'Está alto mano, você precisa se alimentar melhor.');
+		} else {
+			var node = document.createTextNode('Seu imc é de ' + imc + ' ' + 'Está de boas cara, continue assim.');
+		}
+
 	} else {
-		var sexo = 'Ei flor, ';
+		if (imc < 19) {
+			var node = document.createTextNode('Seu imc é de ' + imc + ' ' + 'Está abaixo do normal flor, você precisa começar a comer direito.');
+		} else if (imc > 27) {
+			var node = document.createTextNode('Seu imc é de ' + imc + ' ' + 'Está alto lindinha, você precisa se alimentar melhor.');
+		} else {
+			var node = document.createTextNode('Seu imc é de ' + imc + ' ' + 'Ui delicia, continua assim que tá gostosa.');
+		}
 	}
 
 	var para = document.createElement("h1");
 
-	if (imc < 24) {
-		var node = document.createTextNode(imc + ' ' + sexo + 'seu imc está abaixo do normal, você precisa começar a comer direito.');
-	} else if (imc > 26 ) {
-		var node = document.createTextNode(imc + ' ' + sexo + 'seu imc está Alto! vamos começar a fechar a boquinha?');
-	}
-
 	para.appendChild(node);
-	var element = document.getElementById("div1");
+	var element = document.getElementById("txt");
 	element.appendChild(para);
 	return false;
 }
