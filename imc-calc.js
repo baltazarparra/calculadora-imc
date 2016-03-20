@@ -27,10 +27,8 @@ var imc = indice.toFixed(2);
 
 	if (imc < 25) {
 		var node = document.createTextNode(imc + ' ' + 'Seu imc está abaixo do normal, você precisa começar a comer direito.');
-	} else if (imc >= 25 ) {
-		var node = document.createTextNode(imc + ' ' + 'Seu imc está Ok! parabens delicinha.');
-	} else if ( imc > 28) {
-		var node = document.createTextNode(imc + ' ' + 'Bora fechar um pouco a boquinha hen.');
+	} else if (imc > 25 ) {
+		var node = document.createTextNode(imc + ' ' + 'Seu imc está Alto! vamos começar a fechar a boquinha?');
 	}
 
 	para.appendChild(node);
