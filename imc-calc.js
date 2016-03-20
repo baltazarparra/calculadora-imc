@@ -24,7 +24,15 @@ var imc = indice.toFixed(2);
 	//}
 
 	var para = document.createElement("h1");
-	var node = document.createTextNode('Seu indice de massa corporal é de: ' + imc);
+
+	if (imc < 25) {
+		var node = document.createTextNode(imc + ' ' + 'Seu imc está abaixo do normal, você precisa começar a comer direito.');
+	} else if (imc >= 25 ) {
+		var node = document.createTextNode(imc + ' ' + 'Seu imc está Ok! parabens delicinha.');
+	} else if ( imc > 28) {
+		var node = document.createTextNode(imc + ' ' + 'Bora fechar um pouco a boquinha hen.');
+	}
+
 	para.appendChild(node);
 	var element = document.getElementById("div1");
 	element.appendChild(para);
