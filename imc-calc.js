@@ -4,7 +4,11 @@
 
 function imcCalc(){
 
-var peso = document.getElementById("peso").value;
+var kilos = document.getElementById("peso").value;
+var kg = kilos.toString();
+var gramas = kg.replace(',','.');
+var peso = Math.round(gramas);
+
 var estatura = document.getElementById("estatura").value;
 
 var replaceVirgula = estatura.replace(',','.');
