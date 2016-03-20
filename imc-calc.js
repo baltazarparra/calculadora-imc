@@ -4,7 +4,6 @@
 
 function imcCalc(){
 
-
 var peso = document.getElementById("peso").value;
 var estatura = document.getElementById("estatura").value;
 
