@@ -35,7 +35,7 @@ var imc = indice.toFixed(2);
 		} else if (imc > 27) {
 			var node = document.createTextNode('Seu imc é de ' + imc + ' ' + 'Está alto lindinha, você precisa se alimentar melhor.');
 		} else {
-			var node = document.createTextNode('Seu imc é de ' + imc + ' ' + 'Ui delicia, continua assim que tá gostosa.');
+			var node = document.createTextNode('Seu imc é de ' + imc + ' ' + 'Ui delicia, continue assim.');
 		}
 	}
 

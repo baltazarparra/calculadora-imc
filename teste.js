@@ -3,10 +3,9 @@
  */
 
 
-var estatura = 187;
-var replacePonto = estatura.replace('.','');
-var replaceVirgula = replacePonto.replace(',','');
-var tiraLetra = parseInt(replaceVirgula);
-var altura = tiraLetra.charAt(0) + '.' + tiraLetra.charAt(1) + tiraLetra.charAt(2);
+var kilos = '80,8';
+var kg = kilos.toString();
+var gramas = kg.replace(',','.');
+var peso = Math.round(gramas);
 
-console.log(altura);
+console.log(peso);
