@@ -6,6 +6,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script src="imc-calc.js"></script>
+    <form  onSubmit = "return imcCalc();">
+        <input id="homem" type="radio" name="gender" value="homem">Homem<br>
+        <input id="mulher" type="radio" name="gender" value="mulher">Mulher<br>
+        <label for="estatura">Altura:</label>
+        <input type="text" id="estatura" name="estatura" placeholder="Your First Name">cm<br>
+
+        <label for="peso">peso:</label>
+        <input type="text" id="peso" name="peso" placeholder="Your last Name">kg<br>
+
+        <div id="txt"></div>
+        <button type="submit" >Calcular</button>
+    </form>
+    <a href="javascript:location.reload(true)">Refresh this page</a>
+    <script src="imc-calc.js"></script>
 </body>
 </html>
