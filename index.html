@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Calculadora de IMC</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <form  onSubmit = "return imcCalc();">
-        <input id="homem" type="radio" name="gender" value="homem">Homem<br>
-        <input id="mulher" type="radio" name="gender" value="mulher">Mulher<br>
-        <label for="estatura">Altura:</label>
-        <input type="text" id="estatura" name="estatura" placeholder="Your First Name">cm<br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+        <title>Calculadora de IMC</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="milligram.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-        <label for="peso">peso:</label>
-        <input type="text" id="peso" name="peso" placeholder="Your last Name">kg<br>
+        <div class="imc-box">
 
-        <div id="txt"></div>
-        <button type="submit" >Calcular</button>
-    </form>
-    <a href="javascript:location.reload(true)">Refresh this page</a>
-    <script src="imc-calc.js"></script>
-</body>
+            <form class="form"  onSubmit = "return imcCalc();">
+                <input class="input" id="homem" type="radio" name="gender" value="homem">Homem<br>
+                <input class="input" id="mulher" type="radio" name="gender" value="mulher">Mulher<br>
+                <label class="label" for="estatura">Altura:</label>
+                <input class="input" type="text" id="estatura" name="estatura" placeholder="Digite sua altura">cm<br>
+
+                <label class="label" for="peso">peso:</label>
+                <input class="input" type="text" id="peso" name="peso" placeholder="Digite seu peso">kg<br>
+
+                <div class="text" id="txt"></div>
+                <button class="btn" type="submit" >Calcular</button>
+            </form>
+
+            <a href="javascript:location.reload(true)">
+                <button class="btn">
+                    Limpar resultado
+                </button>
+            </a>
+
+        </div>
+
+        <script src="imc-calc.js"></script>
+    </body>
 </html>
