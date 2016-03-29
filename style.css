@@ -1,11 +1,23 @@
-.imc-box {}
+.imc-box {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.radio {
+    display: inline;
+}
+
+.paragraph {
+    display: inline;
+}
 
 .form {
     color: gray;
 }
 
-.input {}
-
-.label {}
-
-.btn {}
+.text p {
+    font-size:  .8em;
+    text-align: center;
+}

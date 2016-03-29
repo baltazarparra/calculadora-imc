@@ -41,7 +41,7 @@ var imc = indice.toFixed(2);
 		}
 	}
 
-	var para = document.createElement("h1");
+	var para = document.createElement("p");
 
 	para.appendChild(node);
 	var element = document.getElementById("txt");

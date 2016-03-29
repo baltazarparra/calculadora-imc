@@ -13,23 +13,24 @@
         <div class="imc-box">
 
             <form class="form"  onSubmit = "return imcCalc();">
-                <input class="input" id="homem" type="radio" name="gender" value="homem">Homem<br>
-                <input class="input" id="mulher" type="radio" name="gender" value="mulher">Mulher<br>
+                <input class="radio" id="homem" type="radio" name="gender" value="homem">
+                    <p class="paragraph">Homem</p>
+                <input class="radio" id="mulher" type="radio" name="gender" value="mulher">
+                    <p class="paragraph">Mulher</p>
                 <label class="label" for="estatura">Altura:</label>
-                <input class="input" type="text" id="estatura" name="estatura" placeholder="Digite sua altura">cm<br>
+                <input class="input" type="text" id="estatura" name="estatura" placeholder="Digite sua altura">
 
-                <label class="label" for="peso">peso:</label>
-                <input class="input" type="text" id="peso" name="peso" placeholder="Digite seu peso">kg<br>
+                <label class="label" for="peso">Peso:</label>
+                <input class="input" type="text" id="peso" name="peso" placeholder="Digite seu peso">
 
                 <div class="text" id="txt"></div>
                 <button class="btn" type="submit" >Calcular</button>
+                <a href="javascript:location.reload(true)">
+                    <button class="btn">
+                        Limpar resultado
+                    </button>
+                </a>
             </form>
-
-            <a href="javascript:location.reload(true)">
-                <button class="btn">
-                    Limpar resultado
-                </button>
-            </a>
 
         </div>
 
