@@ -9,7 +9,7 @@ var kilos = document.getElementById("peso").value;
 var gramas = kilos.replace(',','.');
 var kg = kilos.toString();
 var kiloPonto = kg.replace('.','');
-var peso = kiloPonto.charAt(0) + kiloPonto.charAt(1);
+var peso = kiloPonto.charAt(0) + kiloPonto.charAt(1) + kiloPonto.charAt(2);
 
 var estatura = document.getElementById("estatura").value;
 
