@@ -10,7 +10,7 @@
     </head>
     <body>
 
-        <div class="imc-box">
+        <main class="imc-box">
 
             <form class="form"  onSubmit = "return imcCalc();">
                 <input class="radio" id="homem" type="radio" name="gender" value="homem">
@@ -23,14 +23,15 @@
                 <label class="label" for="peso">Peso:</label>
                 <input class="input" type="text" id="peso" name="peso" placeholder="Digite seu peso">
 
-                <div class="text" id="txt"></div>
                 <button class="btn" type="submit" >Calcular</button>
                 <a href="javascript:location.reload(true)">
                     Limpar resultado
                 </a>
+                <div class="text" id="txt"></div>
             </form>
 
-        </div>
+
+        </main>
 
         <script src="imc-calc.js"></script>
     </body>

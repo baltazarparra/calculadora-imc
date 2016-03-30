@@ -21,6 +21,12 @@ var altura = validaPonto.charAt(0) + '.' + validaPonto.charAt(1) + validaPonto.c
 var indice = peso / (altura * altura);
 var imc = indice.toFixed(2);
 
+	if(document.getElementById("estatura").value == ""){
+		alert('Por favor, preencha todos os campos.');
+		document.getElementById("estatura").focus();
+		return false;
+	}
+
 	if (document.getElementById('homem').checked) {
 		rate_value = document.getElementById('homem').value;
 		if (imc < 20) {
@@ -46,6 +52,7 @@ var imc = indice.toFixed(2);
 	para.appendChild(node);
 	var element = document.getElementById("txt");
 	element.appendChild(para);
+
 	return false;
 }
 
